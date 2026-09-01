@@ -165,6 +165,25 @@
   .case.placeholder h3{color:var(--slate);}
   .case.placeholder .note{font-family:var(--mono); font-size:12.5px; color:var(--amber); margin-top:10px;}
 
+  /* ---------- RECOMMENDATIONS ---------- */
+  .rec-grid{display:grid; grid-template-columns:1fr 1fr; gap:28px;}
+  @media (max-width:800px){ .rec-grid{grid-template-columns:1fr;} }
+  .rec-card{
+    border:1px solid var(--line); background:var(--panel); border-radius:4px;
+    padding:32px 34px; display:flex; flex-direction:column;
+  }
+  .rec-quote-mark{font-family:var(--display); font-size:40px; color:var(--teal-dim); line-height:1; margin-bottom:4px;}
+  .rec-quote{font-size:15px; color:#2C3A42; flex:1;}
+  .rec-quote p + p{margin-top:14px;}
+  .rec-person{display:flex; align-items:center; gap:14px; margin-top:24px; padding-top:20px; border-top:1px solid var(--line);}
+  .rec-avatar{
+    width:42px; height:42px; border-radius:50%; background:var(--teal-dim); color:var(--teal);
+    display:flex; align-items:center; justify-content:center; font-family:var(--display); font-weight:600; font-size:15px; flex-shrink:0;
+  }
+  .rec-name{font-family:var(--display); font-size:15px; font-weight:600;}
+  .rec-role{font-size:12.5px; color:var(--slate); margin-top:2px;}
+  .rec-meta{font-family:var(--mono); font-size:11px; color:var(--teal); text-transform:uppercase; letter-spacing:0.04em; margin-top:3px;}
+
   /* ---------- SKILLS ---------- */
   .skill-groups{display:grid; grid-template-columns:1fr 1fr; gap:40px;}
   @media (max-width:700px){ .skill-groups{grid-template-columns:1fr;} }
@@ -249,6 +268,7 @@
       <a href="#work">Case Studies</a>
       <a href="#personal">Personal Work</a>
       <a href="#skills">Skills</a>
+      <a href="#recommendations">Recommendations</a>
       <a href="#contact">Contact</a>
     </div>
   </nav>
@@ -1171,6 +1191,49 @@ render();
         <h4>Education</h4>
         <div class="skill-chip-row">
           <span class="skill-chip">BBA, Finance & IS — ACU, Dec 2026</span><span class="skill-chip">Fintech/Analytics Concentration</span><span class="skill-chip">GPA 3.93</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= RECOMMENDATIONS ================= -->
+  <section id="recommendations">
+    <div class="section-head">
+      <span class="idx">04</span>
+      <h2>Recommendations</h2>
+      <p>From managers & mentors</p>
+    </div>
+    <div class="rec-grid">
+      <div class="rec-card">
+        <div class="rec-quote-mark">&ldquo;</div>
+        <div class="rec-quote">
+          <p>Katelyn was a focused and dedicated employee throughout the duration of her internship at Santander. She encountered a variety of challenges as she worked through the AI/Automation driven tasks assigned to her and navigated them in a professional and solution-focused manner.</p>
+          <p>Her curiosity and self-starting attitude made it easy to assign her more challenging tasks that leveraged tools that were new to both herself and the team.</p>
+        </div>
+        <div class="rec-person">
+          <div class="rec-avatar">BH</div>
+          <div>
+            <div class="rec-name">Brian Hennings</div>
+            <div class="rec-role">Director, Product Development at Santander Consumer USA</div>
+            <div class="rec-meta">Managed Katelyn directly</div>
+          </div>
+        </div>
+      </div>
+      <div class="rec-card">
+        <div class="rec-quote-mark">&ldquo;</div>
+        <div class="rec-quote">
+          <p>I had the pleasure of working with Katelyn during her two-month internship, and I was incredibly impressed by how much she accomplished in such a short time. I could explain a problem and the ideal state I hoped to achieve, and she would take that vision and run with it with minimal guidance.</p>
+          <p>Katelyn was a true self-starter. She helped streamline an existing intake process and developed a framework to consolidate and automate reporting that had previously required significant manual effort. She independently researched available tools and capabilities, worked through challenges, and consistently came back with thoughtful recommendations and potential solutions rather than simply identifying problems.</p>
+          <p>What stood out just as much as what she built was the ownership she showed. She created detailed transition documentation so our team could understand, maintain, troubleshoot, and continue building on her work after her internship ended.</p>
+          <p>Katelyn is resourceful, curious, proactive, and highly capable of taking an idea and turning it into a practical solution. She made a meaningful impact on our team in just two months, and I would gladly recommend her.</p>
+        </div>
+        <div class="rec-person">
+          <div class="rec-avatar">MG</div>
+          <div>
+            <div class="rec-name">Megan Guinn</div>
+            <div class="rec-role">Risk & Compliance Leader & Project Manager</div>
+            <div class="rec-meta">Katelyn's mentor</div>
+          </div>
         </div>
       </div>
     </div>
