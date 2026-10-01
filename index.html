@@ -85,17 +85,6 @@
   .btn.primary:hover{background:var(--teal); border-color:var(--teal);}
   .btn:not(.primary):hover{background:var(--ink); color:var(--paper);}
 
-  /* signature trace element */
-  .trace{
-    margin-top:52px; border:1px solid var(--line); background:var(--panel);
-    border-radius:3px; padding:22px 26px; overflow-x:auto;
-  }
-  .trace-row{display:flex; align-items:center; gap:14px; font-family:var(--mono); font-size:13.5px; white-space:nowrap;}
-  .trace-row + .trace-row{margin-top:12px;}
-  .trace-manual{color:#9AA6A0; text-decoration:line-through; text-decoration-color:var(--amber);}
-  .trace-arrow{color:var(--slate);}
-  .trace-auto{color:var(--teal); font-weight:500;}
-  .trace-label{font-family:var(--mono); font-size:10.5px; color:var(--slate); text-transform:uppercase; letter-spacing:0.06em; margin-bottom:14px;}
 
   .stat-row{display:flex; gap:0; margin-top:56px; border-top:1px solid var(--line); border-bottom:1px solid var(--line); flex-wrap:wrap;}
   .stat{flex:1; min-width:150px; padding:20px 0 16px 22px; border-left:1px solid var(--line);}
@@ -127,7 +116,6 @@
   }
   .case-meta{font-family:var(--mono); font-size:11.5px; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px;}
   .case h3{font-family:var(--display); font-size:23px; font-weight:600; margin-bottom:16px; max-width:640px;}
-  .case-trace{margin:20px 0 26px;}
   .case-grid{display:grid; grid-template-columns:1fr 1fr 1fr; gap:28px; margin-top:8px;}
   @media (max-width:800px){ .case-grid{grid-template-columns:1fr;} }
   .case-col .col-label{font-family:var(--mono); font-size:10.5px; color:var(--slate); text-transform:uppercase; letter-spacing:0.06em; margin-bottom:8px;}
@@ -286,15 +274,6 @@
       <a class="btn" href="Katelyn_Brandes_Resume.pdf" download>Download Resume</a>
     </div>
 
-    <div class="trace">
-      <div class="trace-label">A pattern across every project below</div>
-      <div class="trace-row"><span class="trace-manual">Guessing equipment demand per branch</span><span class="trace-arrow">→</span><span class="trace-auto">SARIMAX / Holt-Winters / RNN forecasts</span></div>
-      <div class="trace-row"><span class="trace-manual">A thin, easy-to-skip request form</span><span class="trace-arrow">→</span><span class="trace-auto">Power Apps form with a built-in AI assistant</span></div>
-      <div class="trace-row"><span class="trace-manual">Demand tracked apart from features & releases</span><span class="trace-arrow">→</span><span class="trace-auto">One connected Power BI model</span></div>
-      <div class="trace-row"><span class="trace-manual">Grading 282 exams by hand</span><span class="trace-arrow">→</span><span class="trace-auto">Automatic grading system</span></div>
-      <div class="trace-row"><span class="trace-manual">156-year-old paper plot ledger</span><span class="trace-arrow">→</span><span class="trace-auto">Live digital inventory map</span></div>
-      <div class="trace-row"><span class="trace-manual">Comparing 4 cars' costs by hand</span><span class="trace-arrow">→</span><span class="trace-auto">Interactive cost comparison</span></div>
-    </div>
 
     <div class="stat-row">
       <div class="stat"><div class="num">3</div><div class="label">Professional experiences</div></div>
@@ -385,9 +364,6 @@
     <div class="case">
       <div class="case-meta">Santander Bank · Operation Planning & Analysis Intern · Summer 2026</div>
       <h3>An intake form that thinks along with the person filling it out</h3>
-      <div class="case-trace trace">
-        <div class="trace-row"><span class="trace-manual">A thin, easy-to-skip request form</span><span class="trace-arrow">→</span><span class="trace-auto">Power Apps form with a built-in AI assistant</span></div>
-      </div>
       <div class="case-grid">
         <div class="case-col">
           <div class="col-label">Problem</div>
@@ -411,10 +387,6 @@
     <div class="case">
       <div class="case-meta">Santander Bank · Operation Planning & Analysis Intern · Summer 2026</div>
       <h3>Understanding when a business idea will be released by IT</h3>
-      <div class="case-trace trace">
-        <div class="trace-row"><span class="trace-manual">PMs manually writing docs & planning reminders</span><span class="trace-arrow">→</span><span class="trace-auto">Jira automation rules</span></div>
-        <div class="trace-row"><span class="trace-manual">Status-check meetings to track IT deployment</span><span class="trace-arrow">→</span><span class="trace-auto">Power BI dashboard</span></div>
-      </div>
       <div class="case-grid">
         <div class="case-col">
           <div class="col-label">Problem</div>
@@ -438,9 +410,6 @@
     <div class="case">
       <div class="case-meta">Consulting Project for Pinecrest Cemetery · ACU · Spring 2026</div>
       <h3>Turning a 1956 paper ledger into a live plot map</h3>
-      <div class="case-trace trace">
-        <div class="trace-row"><span class="trace-manual">Paper ledger, no record of what's sold or open</span><span class="trace-arrow">→</span><span class="trace-auto">Interactive plot map, live below</span></div>
-      </div>
       <div class="case-grid">
         <div class="case-col">
           <div class="col-label">Problem</div>
@@ -827,9 +796,6 @@
     <div class="case">
       <div class="case-meta">ACU AI Analytics Consulting · Spring 2025 – Spring 2026</div>
       <h3>An auto-grading engine that gave a professor 4 hours back per exam</h3>
-      <div class="case-trace trace">
-        <div class="trace-row"><span class="trace-manual">Checking every answer by hand, exam after exam</span><span class="trace-arrow">→</span><span class="trace-auto">Automatic grading system</span></div>
-      </div>
       <div class="case-grid">
         <div class="case-col">
           <div class="col-label">Problem</div>
@@ -863,9 +829,6 @@
     <div class="case">
       <div class="case-meta">USME (US Med-Equip) · Data Science Consultant Intern · Spring 2026</div>
       <h3>Replacing manual demand estimates with forecasts stakeholders could act on</h3>
-      <div class="case-trace trace">
-        <div class="trace-row"><span class="trace-manual">Guessing equipment demand per branch</span><span class="trace-arrow">→</span><span class="trace-auto">SARIMAX / Holt-Winters / RNN forecasts</span></div>
-      </div>
       <div class="case-grid">
         <div class="case-col">
           <div class="col-label">Problem</div>
@@ -909,9 +872,6 @@
     <div class="case">
       <div class="case-meta">Personal Project · 2026</div>
       <h3>An interactive tool to decide which car actually costs less to own</h3>
-      <div class="case-trace trace">
-        <div class="trace-row"><span class="trace-manual">Comparing 4 cars' quotes by hand</span><span class="trace-arrow">→</span><span class="trace-auto">Interactive cost comparison, live below</span></div>
-      </div>
       <div class="case-grid">
         <div class="case-col">
           <div class="col-label">Problem</div>
